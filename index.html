@@ -52,24 +52,27 @@
     <main>
         <div class="container-upload-imagem">
             <div class="container-imagem">
-                <img src="img/imagem1.png" alt="" class="imagem">
-                <button> carregar imagem</button>
-                <div class="container-imagem-nome">
-                    <p>image_projeto.png</p>
-                    <img src="img/close.svg" alt="">
-                </div>
+                <img src="img/imagem1.png" alt="" class="main-imagem">
+            </div>
+            <button> carregar imagem</button>
+            <div class="container-imagem-nome">
+                <p>image_projeto.png</p>
+                <img src="img/close.svg" alt="">
             </div>
         </div>
-        <dic class="container-descricao">
-            <h2>novo projeto</h2>
-            <form action="">
+        <div class="container-descricao">
+
+                <h2>novo projeto</h2>
+            
+            <form >
+               
                 <div>
                     <label for="nome">Nome do projeto</label>
                     <input type="text" id="nome" name="nome">
                 </div>
                 <div>
                     <label for="descricao">Descrição </label>
-                    <testarea id="descricao" name="descricao">
+                    <textarea id="descricao" name="descricao"></textarea>
                 </div>
                 <div>
                     <label for="categorias">Categorias</label>
@@ -82,11 +85,12 @@
                     </li>
                 </ul>
                 <div class="container-botoes">
-                    <button class="botao-decartar">Descartar</button>
+                    <button class="botao-descartar">Descartar</button>
                     <button class="botao-publicar">Publicar</button>
                 </div>
+            
             </form>
-        </dic>
+        </div>
     </main>
 
     <script src="script.js"></script>
