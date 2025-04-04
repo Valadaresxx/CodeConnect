@@ -206,7 +206,7 @@ textarea{
     font-size: 18px;
     position: inherit;
 
-}
+} 
 .container-upload-imagem button::after{
     content: "";
     background-image: url("img/upload.svg");
