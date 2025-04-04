@@ -3,4 +3,5 @@ const inputUpload = document.getElementById("image-upload");
 
 uploadBtn.addEventListener("click", () => {
     inputUpload.click();
+    console.log("testando git agr ")
 })
