@@ -36,4 +36,21 @@ inputUpload.addEventListener("change", async (evento) =>{
             console.error("Erro na leitura do arquivo!")
         }
     }
-})
+});
+
+const inputCategorias = document.getElementById("categorias");
+const liTags = document.getElementById("lista-tags");
+
+inputCategorias.addEventListener("keypress", (evento) => { 
+    if(evento.key === "Enter"){
+        evento.preventDefault();
+        const tags = inputCategorias.value.trim();//remove espaço em branco .trim
+        if(tags !== ""){
+            const newTags = document.createElement("li");
+            newTags.innerHTML = `<p>${tags}</p> <img src="img/close-black.svg">`;
+            liTags.appendChild(newTags);
+            inputCategorias.value="";
+            
+        }
+    }
+});
